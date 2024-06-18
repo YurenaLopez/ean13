@@ -41,6 +41,8 @@ public class ProductosController {
         fileWriter.flush();
         fileWriter.close();
 
+        PDFManager.GenerarPDF(nuevoDato,nuevoDato.getNombre());
+
         return datos;
     }
 }

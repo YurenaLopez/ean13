@@ -16,5 +16,11 @@
     "categoria": "papeleria",
     "precio": "2.0",
     "ean13": "03225005323337"
+  },
+  {
+    "nombre": "Lapiz",
+    "categoria": "papeleria",
+    "precio": "1.0",
+    "ean13": "03224005323337"
   }
 ]
