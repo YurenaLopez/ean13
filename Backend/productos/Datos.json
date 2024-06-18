@@ -22,5 +22,11 @@
     "categoria": "papeleria",
     "precio": "1.0",
     "ean13": "03224005323337"
+  },
+  {
+    "nombre": "Silla",
+    "categoria": "oficina",
+    "precio": "156.0",
+    "ean13": "03114005323337"
   }
 ]

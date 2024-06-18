@@ -12,7 +12,7 @@ public class PDFManager {
         public static void GenerarPDF(Productos productoNuevo, String nombreArchivo) {
                 try {
                         Document doc = new Document(PageSize.A4, 50, 50, 100, 72);
-                        PdfWriter writer = PdfWriter.getInstance(doc, new FileOutputStream(nombreArchivo + ".pdf"));
+                        PdfWriter writer = PdfWriter.getInstance(doc, new FileOutputStream("productos/" + nombreArchivo + ".pdf"));
                         doc.open();
 
                         // Crear y añadir los párrafos con la información del producto
