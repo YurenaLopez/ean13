@@ -3,28 +3,27 @@ package es.ufv.dis.final2022.yls;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.google.gson.stream.JsonReader;
-import org.apache.commons.io.FileUtils;
 
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.InputStream;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 
 public class LeerFicheroJSON {
     public static ArrayList<Productos> LeerFicheroProductos() throws IOException {
-        // Obtiene el archivo JSON
-        InputStream inputStream = LeerFicheroJSON.class.getClassLoader().getResourceAsStream("productos/Datos.json");
-
-        // Copia el archivo JSON a un File
+        // Obtiene el archivo JSON desde la ruta relativa al directorio del proyecto
         File productos = new File("productos/Datos.json");
-        FileUtils.copyInputStreamToFile(inputStream, productos);
+
+        // Verifica si el archivo existe
+        if (!productos.exists()) {
+            throw new IOException("El archivo productos/Datos.json no se encuentra.");
+        }
 
         // Inicializa Gson
         Gson gson = new Gson();
 
-        // Lee el JSON desde el archivo y lo convierte a un ArrayList de NationalDataFile
+        // Lee el JSON desde el archivo y lo convierte a un ArrayList de Productos
         JsonReader reader = new JsonReader(new FileReader(productos));
         Type ProductListType = new TypeToken<ArrayList<Productos>>() {}.getType();
         ArrayList<Productos> products = gson.fromJson(reader, ProductListType);
