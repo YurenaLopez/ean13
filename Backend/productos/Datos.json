@@ -1,0 +1,32 @@
+[
+  {
+    "nombre": "producto",
+    "categoria": "categoria",
+    "precio": "3.0",
+    "ean13": "0322500532677"
+  },
+  {
+    "nombre": "qwe",
+    "categoria": "qwe",
+    "precio": "231.0",
+    "ean13": "60cdcb7f-ed84-41e0-8cb0-f173bdda3499"
+  },
+  {
+    "nombre": "boli",
+    "categoria": "papeleria",
+    "precio": "2.0",
+    "ean13": "03225005323337"
+  },
+  {
+    "nombre": "Lapiz",
+    "categoria": "papeleria",
+    "precio": "1.0",
+    "ean13": "03224005323337"
+  },
+  {
+    "nombre": "Silla",
+    "categoria": "oficina",
+    "precio": "156.0",
+    "ean13": "03114005323337"
+  }
+]
