@@ -15,11 +15,10 @@ import java.util.ArrayList;
 public class LeerFicheroJSON {
     public static ArrayList<Productos> LeerFicheroProductos() throws IOException {
         // Obtiene el archivo JSON
-        String url ="/productos/Datos.json";
-        InputStream inputStream = LeerFicheroJSON.class.getClassLoader().getResourceAsStream(url);
+        InputStream inputStream = LeerFicheroJSON.class.getClassLoader().getResourceAsStream("productos/Datos.json");
 
         // Copia el archivo JSON a un File
-        File productos = new File(url);
+        File productos = new File("productos/Datos.json");
         FileUtils.copyInputStreamToFile(inputStream, productos);
 
         // Inicializa Gson

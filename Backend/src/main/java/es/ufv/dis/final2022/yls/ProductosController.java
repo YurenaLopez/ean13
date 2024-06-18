@@ -16,7 +16,6 @@ import java.util.ArrayList;
 @RestController
 public class ProductosController {
 
-    String url = "/productos/Datos.json";
     // Métodos GET para leer datos de la API
     @GetMapping("/productos")
     public ArrayList<Productos> productos() throws IOException {
@@ -36,7 +35,7 @@ public class ProductosController {
         String json = gson.toJson(datos);
 
         // Escribimos el JSON actualizado en el archivo
-        File file = new File(url);
+        File file = new File("productos/Datos.json");
         FileWriter fileWriter = new FileWriter(file);
         fileWriter.write(json); // Escribir el JSON actualizado
         fileWriter.flush();
