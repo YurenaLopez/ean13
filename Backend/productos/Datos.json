@@ -28,5 +28,11 @@
     "categoria": "oficina",
     "precio": "156.0",
     "ean13": "03114005323337"
+  },
+  {
+    "nombre": "mesa",
+    "categoria": "oficina",
+    "precio": "345.6",
+    "ean13": "0322500532688"
   }
 ]
