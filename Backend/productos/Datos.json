@@ -34,5 +34,23 @@
     "categoria": "oficina",
     "precio": "345.6",
     "ean13": "0322500532688"
+  },
+  {
+    "nombre": "folios",
+    "categoria": "oficina",
+    "precio": "5.0",
+    "ean13": "0322500532699"
+  },
+  {
+    "nombre": "portalapices",
+    "categoria": "oficina",
+    "precio": "12.0",
+    "ean13": "0322500532611"
+  },
+  {
+    "nombre": "ventana",
+    "categoria": "estructural",
+    "precio": "345.6",
+    "ean13": "03114005323355"
   }
 ]

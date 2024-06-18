@@ -133,7 +133,7 @@ public class MainView extends VerticalLayout {
             HttpResponse<String> response = httpClient.send(httpRequest, HttpResponse.BodyHandlers.ofString());
 
             System.out.println("Respuesta del servidor: " + response.body()); // Log para depuración
-
+            Notification.show("PDF Generado de manera correcta");
             if (response.statusCode() == 200 || response.statusCode() == 201) {
                 // Actualizar la lista productos y el grid
                 productos = getProductosFromController();
